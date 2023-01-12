@@ -1,6 +1,6 @@
 import datetime
 
-from src.query_caching_service.access import Access
+from .access import Access
 
 
 class Observation(Access):
