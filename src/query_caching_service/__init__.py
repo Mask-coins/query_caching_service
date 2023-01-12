@@ -1,3 +1,4 @@
 __all__ = [
-    'access'
+    'access',
+    'observation'
 ]
