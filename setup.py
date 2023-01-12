@@ -12,7 +12,7 @@ def _requires_from_file(filename):
 
 setup(
     name="query_caching_service",
-    version="0.1.6",
+    version="0.1.7",
     description="一度アクセスした資源に何度もアクセスしないためのツールです．",
     author="Mask_coins",
     url="https://github.com/Mask-coins/query_caching_service",
