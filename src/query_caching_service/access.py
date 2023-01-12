@@ -7,6 +7,10 @@ from urllib import request
 dir_path = ""
 
 
+def set_directory(new_dir_path):
+    dir_path = new_dir_path
+
+
 class Access(object):
     _temp_dict: dict[str,[dict]] = dict()
 
