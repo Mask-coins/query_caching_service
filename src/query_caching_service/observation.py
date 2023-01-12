@@ -1,6 +1,6 @@
 import datetime
 
-from .access import Access
+from .access import Access, URLAccess
 
 
 class Observation(Access):
@@ -52,3 +52,5 @@ class Observation(Access):
         return response
 
 
+class URLObservation(Observation, URLAccess):
+    pass
