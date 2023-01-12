@@ -16,6 +16,13 @@ print(res)
 
 ファイルの置き場所を変えたい場合は，set_directoryを呼び出して下さい．
 
+```
+from query_caching_service.access import  set_directory
+
+set_directory("dir_path")
+```
+
+
 # アクセス方法を独自定義したい
 Accsessクラスを継承して，access()メソッドを定義して下さい．
 
