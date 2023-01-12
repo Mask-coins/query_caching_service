@@ -12,7 +12,7 @@ def _requires_from_file(filename):
 
 setup(
     name="query_caching_service",
-    version="0.1.2",
+    version="0.1.3",
     description="一度アクセスした資源に何度もアクセスしないためのツールです．",
     author="Mask_coins",
     url="https://github.com/Mask-coins/query_caching_service",
@@ -21,7 +21,7 @@ setup(
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
     include_package_data=True,
     zip_safe=False,
-    install_requires=_requires_from_file('requirements.txt'),
+    #install_requires=_requires_from_file('requirements.txt'),
     #setup_requires=["pytest-runner"],
     #tests_require=["pytest", "pytest-cov"]
 )
