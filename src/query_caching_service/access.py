@@ -4,11 +4,12 @@ from typing import Any
 import chardet
 from urllib import request
 
-dir_path = ""
+DIR_PATH = ""
 
 
 def set_directory(new_dir_path):
-    dir_path = new_dir_path
+    global DIR_PATH
+    DIR_PATH = new_dir_path
 
 
 class Access(object):
@@ -55,9 +56,9 @@ class Access(object):
 
     @property
     def db_name(self):
-        if dir_path == "":
+        if DIR_PATH == "":
             return self.__class__.__name__ + ".db"
-        return dir_path + "/" + self.__class__.__name__ + ".db"
+        return DIR_PATH + "/" + self.__class__.__name__ + ".db"
 
     @property
     def conn(self):
